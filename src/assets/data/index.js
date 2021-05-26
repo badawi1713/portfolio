@@ -37,7 +37,7 @@ export const workList = [
         release: "2020",
         description: "Creating landing page of I-RURAL for Telkom's product. This landing page can be registered by customer and ISP to get I-RURAL services. This web application interfaces are created by React and Tailwind",
         platform: "Web",
-        demoURL: "http://i-rural.netlify.app/",
+        demoURL: "https://irural.vercel.app/",
         repoURL: "https://github.com/badawi1713/irural",
         imageURL: IMGIrural
     }

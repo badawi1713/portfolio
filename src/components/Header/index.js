@@ -5,7 +5,7 @@ import { IMGProfile } from '../../assets/images'
 const Header = () => {
 
     const downloadHandler = () => {
-        window.open('https://shorturl.at/pCFI3', '_blank')
+        window.open('https://bit.ly/3fNmrWc', '_blank')
     }
 
     return (
