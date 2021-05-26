@@ -4,7 +4,7 @@ import { Tooltip } from '@material-ui/core'
 
 const Main = () => {
     return (
-        <main className='py-6 xl:px-40 bg-blue-50 min-h-screen space-y-8 px-14'>
+        <main id='experience' className='py-6 xl:px-40 xl:py-20 bg-blue-50 min-h-screen space-y-8 px-14'>
             <section className='space-y-4 overflow-auto'>
                 <h3 className='text-xl font-bold'>Work Experience</h3>
                 <div className='bg-white py-8 px-10 rounded-md space-y-4'>
@@ -28,7 +28,7 @@ const Main = () => {
                     </p>
                 </div>
             </section>
-            <section className='space-y-4 overflow-auto'>
+            {/* <section className='space-y-4 overflow-auto'>
                 <h3 className='text-xl font-bold'>Education</h3>
                 <div className='bg-white py-8 px-10 rounded-md space-y-4'>
                     <div>
@@ -50,7 +50,7 @@ const Main = () => {
                         a verification system for digital forensic documents based on Blockchain technology using Node.js. While I’m in university I also applied for teaching as a web programming practicum assistant.
                     </p>
                 </div>
-            </section>
+            </section> */}
             <section className='space-y-4'>
                 <h3 className='text-xl font-bold'>Skills & Tools</h3>
                 <div className=' grid grid-cols-2 gap-8 md:grid-cols-5 w-full xl:gap-10'>

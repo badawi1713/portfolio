@@ -3,8 +3,13 @@ import React from 'react'
 import { IMGProfile } from '../../assets/images'
 
 const Header = () => {
+
+    const downloadHandler = () => {
+        window.open('https://shorturl.at/pCFI3', '_blank')
+    }
+
     return (
-        <header className='min-h-screen xl:px-40 flex xl:flex-row flex-col-reverse items-center justify-between py-6 px-14'>
+        <header id='about' className='min-h-screen xl:px-40 xl:py-40 flex xl:flex-row flex-col-reverse items-center justify-between py-6 px-14'>
             <div className=' space-y-8 xl:space-y-12 '>
                 <h2 className='xl:text-5xl leading-tight font-bold text-4xl'>
                     Hi, I am Dzaky,
@@ -15,7 +20,7 @@ const Header = () => {
                     I described myself as a creative, and willing to learn new. As a front-end developer
                     I'm very interested in topics about web application development using React.js and UI/UX design.
                 </h6>
-                <button className='bg-red-400 py-2 px-5 rounded-md text-white hover:bg-red-500 w-full xl:w-auto'>
+                <button onClick={downloadHandler} className='bg-red-400 py-2 px-5 rounded-md text-white hover:bg-red-500 w-full xl:w-auto'>
                     Download Resume
                 </button>
             </div>
