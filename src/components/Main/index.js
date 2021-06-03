@@ -1,13 +1,17 @@
 import React from 'react'
 import { skills } from '../../assets/data'
 import { Tooltip } from '@material-ui/core'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const Main = () => {
     return (
         <main id='experience' className='py-6 xl:px-40 xl:py-20 bg-blue-50 min-h-screen space-y-8 px-14'>
-            <section className='space-y-4 overflow-auto'>
-                <h3 className='text-xl font-bold'>Work Experience</h3>
-                <div className='bg-white py-8 px-10 rounded-md space-y-4'>
+            <section data-aos='fade-down'  className='space-y-4 overflow-auto'>
+                <h3  className='text-xl font-bold'>Work Experience</h3>
+                <div  className='bg-white py-8 px-10 rounded-md space-y-4'>
                     <div>
                         <h4 className='font-bold text-2xl'>
                             Front-End Developer
@@ -28,7 +32,7 @@ const Main = () => {
                     </p>
                 </div>
             </section>
-            {/* <section className='space-y-4 overflow-auto'>
+            <section data-aos='fade-down' className='space-y-4 overflow-auto'>
                 <h3 className='text-xl font-bold'>Education</h3>
                 <div className='bg-white py-8 px-10 rounded-md space-y-4'>
                     <div>
@@ -50,12 +54,14 @@ const Main = () => {
                         a verification system for digital forensic documents based on Blockchain technology using Node.js. While I’m in university I also applied for teaching as a web programming practicum assistant.
                     </p>
                 </div>
-            </section> */}
-            <section className='space-y-4'>
+            </section>
+            <section data-aos='fade-down' className='space-y-4'>
                 <h3 className='text-xl font-bold'>Skills & Tools</h3>
                 <div className=' grid grid-cols-2 gap-8 md:grid-cols-5 w-full xl:gap-10'>
                     {skills.map(item => (
-                        <Tooltip key={item.id} title={item.title} arrow >
+                        <Tooltip data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000" key={item.id} title={item.title} arrow >
                             <div className='bg-white p-4 rounded-md items-center flex justify-center shadow-sm hover:shadow-lg' >
                                 <img alt='icon' style={{ content: `url(${item.imageURL})` }} className='w-20' />
                             </div>

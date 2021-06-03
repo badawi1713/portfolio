@@ -10,7 +10,7 @@ const Header = () => {
 
     return (
         <header id='about' className='min-h-screen xl:px-40 xl:py-40 flex xl:flex-row flex-col-reverse items-center justify-between py-6 px-14'>
-            <div className=' space-y-8 xl:space-y-12 '>
+            <div  data-aos="zoom-out" className=' space-y-8 xl:space-y-12 '>
                 <h2 className='xl:text-5xl leading-tight font-bold text-4xl'>
                     Hi, I am Dzaky,
                      <br />
@@ -24,7 +24,7 @@ const Header = () => {
                     Download Resume
                 </button>
             </div>
-            <img alt='profile' style={{ content: `url(${IMGProfile})` }} className=' w-60 md:w-72 mb-10 xl:mb-0' />
+            <img data-aos="fade-up" alt='profile' style={{ content: `url(${IMGProfile})` }} className=' w-60 md:w-72 mb-10 xl:mb-0' />
         </header>
     )
 }

@@ -4,6 +4,10 @@ import { motion } from 'framer-motion'
 import React, { useState } from 'react'
 import { Footer, Header, Main, Navbar, Section } from './components'
 import { HashLink } from 'react-router-hash-link'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const App = () => {
   const [showScroll, setShowScroll] = useState(false)

@@ -17,10 +17,10 @@ const Section = () => {
     return (
         <>
             <section id='works' className='min-h-screen bg-white xl:px-40 py-6 space-y-4 px-14 xl:py-20'>
-                <h3 className='text-xl font-bold'>Featured Works</h3>
+                <h3 data-aos='fade-down' className='text-xl font-bold'>Featured Works</h3>
                 <div className='grid md:grid-cols-2 w-full grid-cols-1 md:gap-x-8 gap-y-10'>
                     {workList.map(item => (
-                        <div className='w-full space-y-6' key={item.id} >
+                        <div data-aos="zoom-out" className='w-full space-y-6' key={item.id} >
                             <Tooltip title='See Detail' arrow>
                                 <img src={item.imageURL} alt='img-works' className='rounded-md cursor-pointer hover:shadow-lg' onClick={() => handleClickOpen(item)} />
                             </Tooltip>
